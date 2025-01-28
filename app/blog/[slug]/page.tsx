@@ -6,58 +6,29 @@ import { baseUrl } from 'app/sitemap'
 export async function generateStaticParams() {
   let posts = getBlogPosts()
 
+  let groupedPosts = groupPostsByFolder(posts)
+
+  console.log('Folder Structure:', groupedPosts);
+
   return posts.map((post) => ({
     slug: post.slug,
   }))
 }
 
-export function generateMetadata({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
-  if (!post) {
-    return
-  }
-
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata
-  let ogImage = image
-    ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      publishedTime,
-      url: `${baseUrl}/blog/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [ogImage],
-    },
-  }
-}
+console.log("Global scope")
 
 export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
+  const posts = getBlogPosts();
+
+  const folderStructure = groupPostsByFolder(posts);
+
+  let post = posts.find((post) => post.slug === params.slug);
 
   if (!post) {
-    notFound()
+    notFound();
   }
 
+  console.log('Folder Structure:', folderStructure); 
   return (
     <section>
       <script
@@ -90,9 +61,29 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose">
-        <CustomMDX source={post.content} />
+      <article dangerouslySetInnerHTML={{ __html: post.content }} className="prose">
+        <CustomMDX  source={post.content} />
       </article>
     </section>
   )
+}
+
+
+
+export function groupPostsByFolder(posts) {
+  const tree = {};
+
+  posts.forEach((post) => {
+    const segments = post.slug.split('/').filter(Boolean)
+    let current = tree;
+
+    segments.forEach((segment, index) => {
+      if (!current[segment]) {
+        current[segment] = index === segments.length - 1 ? post : {};
+      }
+      current = current[segment];
+    });
+  });
+
+  return tree;
 }
