@@ -1,0 +1,1 @@
+Is the study of cryptography and cryptanalysis, Therefore, anything that has to do with making or breaking codes falls into cryptology’s domain. 

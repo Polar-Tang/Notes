@@ -1,0 +1,1 @@
+When one of your services of docker compsoe dissapears it's because there was an exit status 1

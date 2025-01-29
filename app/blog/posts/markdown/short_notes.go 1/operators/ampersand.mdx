@@ -1,0 +1,1 @@
+The ampersand (`&`) in Go is used to get the **memory address** of a value, creating a pointe

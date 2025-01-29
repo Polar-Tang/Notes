@@ -1,0 +1,2 @@
+These are a proces use when the concurrency tries to access to the same data at the same time, the writes lock, lock the access from the other threads, so they can't write the same file at the same time until the lock will unlocked .
+https://en.wikipedia.org/wiki/Readers%E2%80%93writer_lock

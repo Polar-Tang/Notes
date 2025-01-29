@@ -1,0 +1,1 @@
+The asterisk it's used to change the [[markdown/short_notes.go 1/pointer]]

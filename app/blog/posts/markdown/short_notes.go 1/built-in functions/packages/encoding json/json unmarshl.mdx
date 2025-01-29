@@ -1,0 +1,2 @@
+The json unmarshal takes a bytes of json-formatted and translates it to a Go value (struct, map, slice, etc.).
+The term ["marshal"](https://en.wikipedia.org/wiki/Marshalling_(computer_science)) originates from historical use in computer science. It refers to the process of preparing data for transmission or storage

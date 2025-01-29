@@ -1,0 +1,1 @@
+In asymmetric encryption we got a public key to encrypt and a private key to decrypt, as everyone has the public key, anyone could do CPA, so this is CPA by default.

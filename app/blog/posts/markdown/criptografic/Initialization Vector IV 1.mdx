@@ -1,0 +1,1 @@
+Is a random, or pseudorandom that casue to the same plaintext always encrypts to a different ciphertext. its used may vary assuming the cyypher mode. 

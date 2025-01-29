@@ -1,0 +1,2 @@
+To declare a function, we use the keyword "func", and name, which could be an [[markdown/short_notes.go/exportad-name]], in this example is "Hello", the arguments that should be typed, and the type of the return
+![[Pasted image 20241127231136.png]]

@@ -1,0 +1,2 @@
+criptography refers to create crpto systems. Is to convert a simple plain text in a more complex data, called the "ciphertext", through applying some logic. Generally this involves to turn the string into it binary value and applier different binary combinations, normally utilizin a [[markdown/criptografic/key]]. 
+We usually use a key to encrypt the data. it can be symmetric, which means that we use the same key to encrypt as to decrypt, and assymmetric, where the key to decrypt is different that the one to encrypt 

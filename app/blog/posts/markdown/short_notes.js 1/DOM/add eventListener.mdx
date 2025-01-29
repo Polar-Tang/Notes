@@ -1,0 +1,1 @@
+Is a method of the interface [[event]].target

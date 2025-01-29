@@ -1,0 +1,1 @@
+The **`[Symbol.iterator]()`** method of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) could be 

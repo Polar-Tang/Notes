@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "ca75fbdf2b12c89f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c3ec4470af8fecf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72654350482255f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HyperText Transfer Protocol.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b5e4216aca375ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Symfonos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "077e68a4ac5763a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5961b4d0aa4fc447",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a24305f396ddc2d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "69303a4a8172a405",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "290d76b980ece642",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4963dd491539eb07",
+    "type": "split",
+    "children": [
+      {
+        "id": "282054e1b0832d8b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b0cac2cf0be3fd42",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Symfonos.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b1c6401a44e46891",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Symfonos.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "299f5888e78932c2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "51d9df13c6e4cac7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Symfonos.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4b5e4216aca375ef",
+  "lastOpenFiles": [
+    "Pasted image 20240709084256.png",
+    "Pasted image 20240709084226.png",
+    "Pasted image 20240709083959.png",
+    "Pasted image 20240709083838.png",
+    "Pasted image 20240709083633.png",
+    "Pasted image 20240709082924.png",
+    "Pasted image 20240709081707.png",
+    "Pasted image 20240708121335.png",
+    "Pasted image 20240707215950.png",
+    "HyperText Transfer Protocol.md",
+    "Symfonos.md",
+    "Pasted image 20240707111715.png",
+    "Pasted image 20240707111150.png"
+  ]
+}

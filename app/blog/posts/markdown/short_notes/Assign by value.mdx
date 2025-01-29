@@ -1,0 +1,2 @@
+## Assign by a value
+When a variable is **assigned by value**, it means that the actual data (the value) is copied into the new variable. So, **copies the value itself** when assigning one variable to another.

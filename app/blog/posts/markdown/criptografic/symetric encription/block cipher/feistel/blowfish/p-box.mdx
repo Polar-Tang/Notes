@@ -1,0 +1,1 @@
+In blow-fish, the p-boxes  are permutation tables, or subkey arrays, to keep it simple. Blow-fish want to keep a high level of entropy, so the P-boxes are fixed set of constants derived from **π (pi)**. At the start blow-fish initializes 18 constants of these random contants, and these are mixed with the provided encryption key during key expansion.

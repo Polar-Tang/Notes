@@ -1,0 +1,1 @@
+A cryptocurrency is a digital asset designed to work as a medium of exchange that uses strong cryptography to secure financial transactions, control the creation of additional units, and also verify the transfer of assets. [Wikipedia](https://en.wikipedia.org/wiki/Cryptocurrency)

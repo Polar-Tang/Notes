@@ -1,0 +1,1 @@
+The method checks only if the property exists, regardless of its value.

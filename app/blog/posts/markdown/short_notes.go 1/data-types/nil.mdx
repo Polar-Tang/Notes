@@ -1,0 +1,1 @@
+`nil` in Go is used to indicate the absence of a value for certain data types

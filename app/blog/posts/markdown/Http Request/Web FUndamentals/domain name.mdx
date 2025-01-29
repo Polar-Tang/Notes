@@ -1,0 +1,1 @@
+A [domain name](https://en.wikipedia.org/wiki/Domain_name) is a string that identify an online realm of administrative authority, autonomy or control. Administrative realm refers to a online entity that owns a space  

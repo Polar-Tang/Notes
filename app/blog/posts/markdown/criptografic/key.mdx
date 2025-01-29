@@ -1,0 +1,1 @@
+Keys are just strings of data, usually lonher,  that are used to secure a message.

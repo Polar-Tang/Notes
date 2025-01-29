@@ -1,0 +1,1 @@
+Use server allows to allow the functions in the same block scope to execute in the server side

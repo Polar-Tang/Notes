@@ -1,0 +1,1 @@
+`_` it's used in a variable when you don't care about the value of some variable. It makes perfect sense if you consider that goes cries when we don't use a initialized variable, so we shoul have a way to deal a necessary variable that we don't need to use.

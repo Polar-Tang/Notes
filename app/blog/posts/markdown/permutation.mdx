@@ -1,0 +1,2 @@
+A permutarion is a formula wich turns an item (bits) in something different, such way that each item has a unique inverse value.
+The permutation should be determined by the key, and diferents key should result in a different permutation. Also all of this have to make look random. All of these three things make a **secure permutation** 

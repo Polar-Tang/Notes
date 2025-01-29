@@ -1,0 +1,1 @@
+Is a security measure merely theoretical, that only differentiates between imposible and not possible. For example OTP is not possible, because this is got by C = P ⊕ K, so we would be need a random key which should be the same length that the cypher text, which is not probable 

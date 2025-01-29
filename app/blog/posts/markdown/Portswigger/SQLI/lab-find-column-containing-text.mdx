@@ -1,0 +1,3 @@
+https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text
+
+This lab is far similar to [[lab-determine-number-of-columns]] we need to determine the number of columns first, and after that check where if we replace string it supports without throwing a 500, the moral here is to always test if the columns from the union select suport different tipes of data, such as null, string (between quotes), number, etc.

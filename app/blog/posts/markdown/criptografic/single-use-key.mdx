@@ -1,0 +1,1 @@
+It's to not utilize the same [[markdown/criptografic/key]] in a differnet [[criptography]] process 

@@ -1,0 +1,16 @@
+https://cwe.mitre.org/data/definitions/522.html
+The product transmits or stores authentication credentials, but it uses an insecure method that is susceptible to unauthorized interception and/or retrieval.
+
+##### Example
+This code changes the user password:
+```php
+$user = $_GET['user'];  
+$pass = $_GET['pass'];  
+$checkpass = $_GET['checkpass'];  
+if ($pass == $checkpass) {
+
+SetUserPassword($user, $pass);
+
+}
+```
+It's just checking that the user is introduced password is the same, but isn't confirming that the user changing the password is the same who owns the account.

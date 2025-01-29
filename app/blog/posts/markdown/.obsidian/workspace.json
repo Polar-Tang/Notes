@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "07ad523fb09fd66b",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a3516c7a3c8051f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23b52ae3b416fda5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web FUndamentals/DNS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DNS"
+            }
+          },
+          {
+            "id": "c6cc2dd26fdbff3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "short_notes_js.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "short_notes_js"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0bdf45c638a5d29e",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc8228e5d541826b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a713c89f113de0f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "fb05cbfe60af6ffa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "cripto",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6df82f1d2f8bbf40",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ec4a9c171059507e",
+    "type": "split",
+    "children": [
+      {
+        "id": "540dbd382757b2b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91b3f1d259128106",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Portswigger/Access control vulnerabilities/Referer-based_access_control.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Referer-based_access_control"
+            }
+          },
+          {
+            "id": "0b6777ee011a3901",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Portswigger/Access control vulnerabilities/Referer-based_access_control.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Referer-based_access_control"
+            }
+          },
+          {
+            "id": "d72889e094c1e12f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "acaaa47ec6414ebe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Portswigger/Access control vulnerabilities/Referer-based_access_control.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Referer-based_access_control"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7a713c89f113de0f",
+  "lastOpenFiles": [
+    "short_notes/short_notes.go/built-in functions/packages/net http/net url/get domain name.md",
+    "short_notes/short_notes.js/JS data types/bolean/operators/AND_operator.md",
+    "short_notes/short_notes.go/built-in functions/packages/uri/url.url.md",
+    "short_notes/short_notes.go/built-in functions/packages/strings/contains.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/set net http.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/put net http.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/post net http.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/new request.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/net url",
+    "short_notes/short_notes.go/built-in functions/packages/net http/http client.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/get net http.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/delete net http.md",
+    "short_notes/short_notes.go/built-in functions/packages/net http/basic_get.md",
+    "short_notes/short_notes.go/built-in functions/packages/io/io.Writer.md",
+    "short_notes/short_notes.go/built-in functions/packages/http/http.md",
+    "short_notes/short_notes.go/built-in functions/packages/http/client.md",
+    "short_notes/short_notes.go/built-in functions/packages/http/*http.request.md",
+    "short_notes/short_notes.go/built-in functions/packages/fmt/show formater.md",
+    "short_notes/short_notes.go/built-in functions/packages/errors/errors.new.md",
+    "short_notes/short_notes.go/built-in functions/packages/fmt/fmt.md",
+    "short_notes/short_notes.go/built-in functions/packages/encoding json/json unmarshl.md",
+    "short_notes/short_notes.go/built-in functions/packages/encoding json/json unmarshal.md",
+    "short_notes/short_notes.go/built-in functions/packages/encoding json/json marshal.md",
+    "short_notes/short_notes.go/built-in functions/packages/encoding json/json in go.md",
+    "short_notes/short_notes.go/built-in functions/packages/encoding json/json decoder.md",
+    "short_notes/short_notes.go/built-in functions/packages/encoding json/encoding json.md",
+    "short_notes/short_notes.go/built-in functions/packages/binary/byteorder.md",
+    "short_notes/short_notes.js/JS data types/bolean/operators",
+    "short_notes/short_notes.go/built-in functions/packages/uri",
+    "short_notes/short_notes.go/built-in functions/packages/strings",
+    "short_notes/short_notes.go/built-in functions/packages/net http",
+    "short_notes/short_notes.go/built-in functions/packages/io",
+    "short_notes/short_notes.go/built-in functions/packages/http",
+    "short_notes/short_notes.go/built-in functions/packages/fmt",
+    "short_notes/short_notes.go/built-in functions/packages/errors",
+    "short_notes/short_notes.go/built-in functions/packages/encoding json",
+    "short_notes/Pasted image 20241231202638.png",
+    "short_notes/Pasted image 20241231201118.png",
+    "short_notes/Pasted image 20241231200749.png",
+    "short_notes/Pasted image 20241231200055.png",
+    "short_notes/Pasted image 20241230222107.png",
+    "short_notes/Pasted image 20241230135022.png",
+    "short_notes/Pasted image 20241230220820.png",
+    "short_notes/Pasted image 20241230134925.png",
+    "short_notes/Pasted image 20241229214743.png",
+    "short_notes/Pasted image 20241229214737.png"
+  ]
+}

@@ -1,0 +1,1 @@
+Try to apply a slice methog such as `s[len(s)-1]` to an element which is not a slice

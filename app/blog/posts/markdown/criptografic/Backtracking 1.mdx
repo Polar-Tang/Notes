@@ -1,0 +1,1 @@
+Backtracking resistance (also called forward secrecy) means that previously generated bits are impossible to recover

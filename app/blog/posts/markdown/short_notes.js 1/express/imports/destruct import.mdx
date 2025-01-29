@@ -1,0 +1,1 @@
+You should destructure the endpoint

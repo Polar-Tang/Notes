@@ -1,0 +1,1 @@
+A variable stores the **memory address (pointer)** of another variable.

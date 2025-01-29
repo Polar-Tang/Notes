@@ -1,0 +1,1 @@
+prediction resistance (backward secrecy) means that future bits should be impossible to predict.

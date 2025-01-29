@@ -1,0 +1,2 @@
+https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-in-error-messages
+This lab ask for cause an error. Whenever there's an input we could always try to send what they don't expect so in `/product?productId=6` send a letter instead of a number `/product?productId=a` and the verbose error will say us a lot of the backend, paste `Apache Struts 2 2.3.31` on submit

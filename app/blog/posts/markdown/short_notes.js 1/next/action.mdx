@@ -1,0 +1,1 @@
+Action are asynchronous functions that can be execute on tags such as form, then it will recive the [form data](https://developer.mozilla.org/en-US/docs/Web/API/FormData) 

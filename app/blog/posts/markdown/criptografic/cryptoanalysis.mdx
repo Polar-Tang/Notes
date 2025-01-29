@@ -1,0 +1,2 @@
+cryptoanalysis is th reverse shell of the [[criptography]].
+Based on **side-channel attack** which means do not target weaknesses in the cryptographic algorithms themselves, but instead exploit weaknesses in their implementation.

@@ -1,0 +1,1 @@
+**Integer overflow** is when a sum of large quantites pushes the value beyonds its upper limit, and this rolls the value over into the negative range. That's because the 32-bit or 64-bit signed formats has symmetrically a maximum negative and a maximum positive, so when i reach one of this limits it rolls over into the oppositte one

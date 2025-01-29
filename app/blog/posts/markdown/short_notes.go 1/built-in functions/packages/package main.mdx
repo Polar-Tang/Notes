@@ -1,0 +1,1 @@
+The `main` package is required to build an executable program in Go. It must include a `main()` function, which serves as the entry point of the program.

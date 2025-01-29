@@ -1,0 +1,1 @@
+It's a concurrncy control which prevent reace condition when two or more threads are trying to access to the same resource in memory

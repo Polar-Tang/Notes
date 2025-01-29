@@ -1,0 +1,15 @@
+**In Function Signatures:**
+
+- `func myFunc(args ...int)`: This accept varaibles of type integers, it could be even a slice of integers
+
+**2. Slicing:**
+
+- `s[i...]`: This creates a slice of the elements of `s` from index `i` to the end.
+
+**3. Spread Operator (with caution):**
+- You could use the spread operator to spread the elements fr4om slice like a single arguments
+	```go
+	nums := []int{1, 2, 3}
+	myFunc(nums...)
+	```
+	

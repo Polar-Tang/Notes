@@ -1,0 +1,1 @@
+A hash function is a mathematical algorithm that takes an input of arbitrary size (like a string of text, a file, or any other data) and produces a fixed-size output. This output is called a "hash" or "hash value".

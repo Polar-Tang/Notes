@@ -1,0 +1,1 @@
+Are segment reserved for a memory, this means some process may ocuppy the same space in memory in spite of require less memory. With most of the OS change to [[markdown/short_notes.go 1/memory/pages memory]]
