@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "short_notes.go 1/go.mod.mdx",
+                "file": "short_notes.js/react/create element.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "go.mod"
+              "title": "create element"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "enter",
+                "query": "create",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -164,18 +165,26 @@
   },
   "active": "23b52ae3b416fda5",
   "lastOpenFiles": [
-    "short_notes.go 1/exportad-name.mdx",
-    "short_notes.go 1/Direct_In-Place_Modification.mdx",
-    "short_notes.go 1/crawl.mdx",
-    "short_notes.go 1/blank identifier.mdx",
-    "short_notes.go 1/data-types/slice.mdx",
-    "short_notes.go 1/data-types/type aliases.mdx",
-    "short_notes.go 1/data-types/rune.mdx",
-    "short_notes.go 1/data-types/nil.mdx",
-    "short_notes.go 1/data-types/int.mdx",
-    "short_notes.go 1/data-types/array.mdx",
+    "short_notes.go/concurrency/go-routine/chan.mdx",
+    "test.md",
+    "test.mdx",
+    "markdown/concurrency/go-routine/deadlock.md",
+    "markdown/concurrency/go-routine",
+    "markdown/concurrency",
+    "markdown/short_notes.go/concurrency/go-routine/buffered-chanel.md",
+    "markdown/short_notes.go/concurrency/go-routine",
+    "markdown/short_notes.go/concurrency",
+    "short_notes.js/JS data types/string/string methods/split.md",
+    "short_notes.js/JS data types/array/array methods/some.md",
+    "short_notes.js/JS data types/array/array methods/find.mdx",
+    "short_notes.js/JS data types/array/array methods/fill array.mdx",
+    "short_notes.js/JS data types/array/array methods/concat.mdx",
+    "short_notes.go/data-types/maps/pointer-for-all.mdx",
+    "short_notes.js/react/element.md",
+    "short_notes.js/react/create element.md",
+    "short_notes.js/react/children.md",
+    "markdown/short_notes.go/looping/for...range.md",
     "markdown/short_notes.go 1/data-types/composite_literals.md",
-    "markdown/short_notes.go 1/data-types",
     "short_notes.js 1/react/element.md",
     "short_notes.js 1/react/children.md",
     "short_notes.js 1/react/create element.md",
@@ -194,15 +203,6 @@
     "short_notes/short_notes.go/built-in functions/packages/net http/get net http.md",
     "short_notes/short_notes.go/built-in functions/packages/net http/delete net http.md",
     "short_notes/short_notes.go/built-in functions/packages/net http/basic_get.md",
-    "short_notes/short_notes.go/built-in functions/packages/io/io.Writer.md",
-    "short_notes/short_notes.go/built-in functions/packages/http/http.md",
-    "short_notes/short_notes.go/built-in functions/packages/http/client.md",
-    "short_notes/short_notes.go/built-in functions/packages/http/*http.request.md",
-    "short_notes/short_notes.go/built-in functions/packages/fmt/show formater.md",
-    "short_notes/short_notes.go/built-in functions/packages/errors/errors.new.md",
-    "short_notes/short_notes.go/built-in functions/packages/fmt/fmt.md",
-    "short_notes/short_notes.go/built-in functions/packages/encoding json/json unmarshl.md",
-    "short_notes/short_notes.go/built-in functions/packages/encoding json/json unmarshal.md",
     "short_notes/Pasted image 20241231202638.png",
     "short_notes/Pasted image 20241231201118.png",
     "short_notes/Pasted image 20241231200749.png",
