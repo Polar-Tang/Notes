@@ -28,7 +28,7 @@ function renderFolderStructure(folder: any) {
     ) : (
       <Link
         href={`/blog${folder.slug}`}
-        className="text-neutral-900 dark:text-neutral-100 tracking-tight"
+        className="text-neutral-900 block dark:text-neutral-100 tracking-tight"
       >
         {folder.name}
       </Link>

@@ -8,3 +8,14 @@ const found = paragraph.match(regex);
 console.log(found);
 // Expected output: Array ["T", "I"]
 ```
+
+
+#### Example
+```ts
+let lastSegments: string[] | null = slug.match(/([^/]+)$/g)
+let lastSegment: string | undefined = lastSegments?.at(0)
+  
+return {
+	lastSegment
+};
+```

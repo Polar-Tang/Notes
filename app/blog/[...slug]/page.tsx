@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   let posts = getBlogPosts();
 
   return posts.map((post) => ({
-    slug: post.slug.split('/').filter(Boolean), // Convert to an array
+    slug: post.slug.split('/').filter(Boolean), 
   }));
 }
 
@@ -16,11 +16,15 @@ export async function generateStaticParams() {
 export default function Blog({ params }) {
   const posts = getBlogPosts()
 
-  // const folderStructure = groupPostsByFolder(posts)
-  console.log("These are the post, ", posts)
-  let post = posts.find((post) =>  post.slug === "/".concat(params.slug.join('/')))
+  
+  // console.log("These are the post, ", posts)
+  let post = posts.find((post) =>  {
+    
+    
+    return decodeURI(post.slug) === decodeURI("/".concat(params.slug.join('/')))
+  })
 
-  console.log("THIS IS THE POST ", post)
+  // console.log("THIS IS THE POST ", post)
   if (!post) {
     notFound()
   }
@@ -32,8 +36,6 @@ export default function Blog({ params }) {
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
@@ -43,7 +45,7 @@ export default function Blog({ params }) {
         }}
       />
       <h1 className="title font-semibold text-2xl tracking-tighter">
-        {post.slug.replace('/', '')}
+        {post.lastSegment}
       </h1>
       <article className="prose">
         <CustomMDX  source={post.content} />
@@ -54,45 +56,43 @@ export default function Blog({ params }) {
 
 
 type FolderNode = {
-  name: string; // Folder or file name
-  slug: string; // Relative path from the root
-  children?: FolderNode[]; // Only present for folders
+  name: string; 
+  slug: string; 
+  children?: FolderNode[]; 
 };
 
 export function groupPostsByFolder(posts: { slug: string }[]): FolderNode {
   const root: FolderNode = {
-    name: 'root', // Root folder
+    name: 'root', 
     slug: '/',
     children: [],
   };
   posts.forEach((post) => {
-    const segments = post.slug.split('/').filter(Boolean); // Split the slug into parts (folders and file)
+    const segments = post.slug.split('/').filter(Boolean); 
     let current = root;
     
     segments.forEach((segment, index) => {
-      // Check if we're at the last segment (file) or folder
+      
       const isFile = index === segments.length - 1;
       
-      // Find or create the current node
       let child = current.children?.find((node) => node.name === segment);
       
       if (!child) {
         child = {
           name: segment,
-          slug: `/${segments.slice(0, index + 1).join('/')}`, // Build the slug incrementally
-          ...(isFile ? {} : { children: [] }), // Files won't have children
+          slug: `/${segments.slice(0, index + 1).join('/')}`, 
+          ...(isFile ? {} : { children: [] }), 
         };
         
         current.children?.push(child);
-      }
+      }   
       
-      // Move deeper into the tree if it's a folder
       if (!isFile) {
         current = child;
       }
     });
   });
-  
+  console.log("THis is the tree", root)  
 
   return root;
 }

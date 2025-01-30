@@ -1,6 +1,6 @@
 import { BlogPosts } from './components/posts'
 import './global.css'
-
+import mongoDB from './config/db.config.js'
 
 
 export default function RootLayout({

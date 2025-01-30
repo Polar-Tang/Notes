@@ -1,14 +1,3 @@
-Import mongoose to the main JavaScript
-```js
-import mongoDB from './config/db.config.js'
-
-const port = 3000
-const app = express()
-
-app.listen(port, () => {
-console.log(`Example app listening on local host http://localhost:${port}`)
-})
-```
 
 ### ORM
 ```SH
@@ -37,6 +26,18 @@ console.log("EL ERROR INDESCRIPTIBLE: ",err)
 export default mongoDB
 ```
 
+Import mongoose to the main JavaScript
+```js
+import mongoDB from './config/db.config.js'
+
+const port = 3000
+const app = express()
+
+app.listen(port, () => {
+console.log(`Example app listening on local host http://localhost:${port}`)
+})
+```
+
 #### Schema
 In mongoose everything it's derivated to a schema, takes an object as an argument and we should initialize it.
 ```js
@@ -47,6 +48,7 @@ const kittySchema = new mongoose.Schema({
 
 ### Model
 Now we defined the schema, it's time to compile it into a model
+##### Signature:
 ```ts
 model(modelName: string, schemaObj: mongoose.Schema): Object
 ```

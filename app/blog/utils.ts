@@ -43,13 +43,16 @@ function getMDXData(dir: string) {
 		const content = fs.readFileSync(filePath, 'utf8');
 
 		let slug = filePath
-			.replace(path.join(process.cwd(), 'app', 'blog', 'posts'), '')
-			.replace(/\.mdx$/, '');
+		.replace(path.join(process.cwd(), 'app', 'blog', 'posts'), '')
+		.replace(/\.mdx$/, '');
+		let lastSegments: string[] | null = slug.match(/([^/]+)$/g)
+		let lastSegment: string | undefined = lastSegments?.at(0) 
 
 
 		if (!slug.startsWith('/')) slug = '/' + slug;
 
 		return {
+			lastSegment,
 			slug,
 			content
 		};

@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web FUndamentals/DNS.md",
+                "file": "short_notes.go 1/go.mod.mdx",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNS"
-            }
-          },
-          {
-            "id": "c6cc2dd26fdbff3c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "short_notes_js.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "short_notes_js"
+              "title": "go.mod"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -67,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cripto",
+                "query": "enter",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -177,8 +162,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a713c89f113de0f",
+  "active": "23b52ae3b416fda5",
   "lastOpenFiles": [
+    "short_notes.go 1/exportad-name.mdx",
+    "short_notes.go 1/Direct_In-Place_Modification.mdx",
+    "short_notes.go 1/crawl.mdx",
+    "short_notes.go 1/blank identifier.mdx",
+    "short_notes.go 1/data-types/slice.mdx",
+    "short_notes.go 1/data-types/type aliases.mdx",
+    "short_notes.go 1/data-types/rune.mdx",
+    "short_notes.go 1/data-types/nil.mdx",
+    "short_notes.go 1/data-types/int.mdx",
+    "short_notes.go 1/data-types/array.mdx",
+    "markdown/short_notes.go 1/data-types/composite_literals.md",
+    "markdown/short_notes.go 1/data-types",
+    "short_notes.js 1/react/element.md",
+    "short_notes.js 1/react/children.md",
+    "short_notes.js 1/react/create element.md",
+    "Web/https_clear.webp",
+    "Web/https_google_enc.webp",
+    "Web/HTTP_Flow.webp",
     "short_notes/short_notes.go/built-in functions/packages/net http/net url/get domain name.md",
     "short_notes/short_notes.js/JS data types/bolean/operators/AND_operator.md",
     "short_notes/short_notes.go/built-in functions/packages/uri/url.url.md",
@@ -187,7 +190,6 @@
     "short_notes/short_notes.go/built-in functions/packages/net http/put net http.md",
     "short_notes/short_notes.go/built-in functions/packages/net http/post net http.md",
     "short_notes/short_notes.go/built-in functions/packages/net http/new request.md",
-    "short_notes/short_notes.go/built-in functions/packages/net http/net url",
     "short_notes/short_notes.go/built-in functions/packages/net http/http client.md",
     "short_notes/short_notes.go/built-in functions/packages/net http/get net http.md",
     "short_notes/short_notes.go/built-in functions/packages/net http/delete net http.md",
@@ -201,29 +203,12 @@
     "short_notes/short_notes.go/built-in functions/packages/fmt/fmt.md",
     "short_notes/short_notes.go/built-in functions/packages/encoding json/json unmarshl.md",
     "short_notes/short_notes.go/built-in functions/packages/encoding json/json unmarshal.md",
-    "short_notes/short_notes.go/built-in functions/packages/encoding json/json marshal.md",
-    "short_notes/short_notes.go/built-in functions/packages/encoding json/json in go.md",
-    "short_notes/short_notes.go/built-in functions/packages/encoding json/json decoder.md",
-    "short_notes/short_notes.go/built-in functions/packages/encoding json/encoding json.md",
-    "short_notes/short_notes.go/built-in functions/packages/binary/byteorder.md",
-    "short_notes/short_notes.js/JS data types/bolean/operators",
-    "short_notes/short_notes.go/built-in functions/packages/uri",
-    "short_notes/short_notes.go/built-in functions/packages/strings",
-    "short_notes/short_notes.go/built-in functions/packages/net http",
-    "short_notes/short_notes.go/built-in functions/packages/io",
-    "short_notes/short_notes.go/built-in functions/packages/http",
-    "short_notes/short_notes.go/built-in functions/packages/fmt",
-    "short_notes/short_notes.go/built-in functions/packages/errors",
-    "short_notes/short_notes.go/built-in functions/packages/encoding json",
     "short_notes/Pasted image 20241231202638.png",
     "short_notes/Pasted image 20241231201118.png",
     "short_notes/Pasted image 20241231200749.png",
     "short_notes/Pasted image 20241231200055.png",
     "short_notes/Pasted image 20241230222107.png",
     "short_notes/Pasted image 20241230135022.png",
-    "short_notes/Pasted image 20241230220820.png",
-    "short_notes/Pasted image 20241230134925.png",
-    "short_notes/Pasted image 20241229214743.png",
-    "short_notes/Pasted image 20241229214737.png"
+    "short_notes/Pasted image 20241230220820.png"
   ]
 }
