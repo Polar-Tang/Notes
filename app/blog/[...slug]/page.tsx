@@ -30,24 +30,17 @@ export default function Blog({ params }) {
   }
 
   return (
-    <section>
+    <section >
       <script
         type="application/ld+json"
-        suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            url: `${baseUrl}/blog/${post.slug}`,
-            author: {
-              '@type': 'Person',
-              name: 'My Portfolio',
-            },
-          }),
+          __html: post.content.replace(/href/g, "target='_blank' href")
         }}
       />
       <h1 className="title font-semibold text-2xl tracking-tighter">
         {post.lastSegment}
       </h1>
-      <article className="prose">
+      <article  className="prose">
         <CustomMDX  source={post.content} />
       </article>
     </section>

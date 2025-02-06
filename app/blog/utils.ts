@@ -63,3 +63,5 @@ function getMDXData(dir: string) {
 export function getBlogPosts() {
 	return getMDXData(path.join(process.cwd(), 'app', 'blog', 'posts'))
 }
+
+console.log(fs.readdirSync("/app/blog/posts/images"))
