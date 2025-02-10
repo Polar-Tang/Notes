@@ -5,6 +5,8 @@ import { highlight } from 'sugar-high'
 import React from 'react'
 import path from 'path'
 import { Children } from 'react';
+import fs from "fs"
+// import randImage from '../images/Pasted image 20241106195251.png'
 
 function Table({ data }) {
 	let headers = data.headers.map((header, index) => (
@@ -94,7 +96,6 @@ const newNodeLinks = (str: string, regex: RegExp) => {
 	// If it's URL
 	if (regex.toString() === URLreg.toString()) {
 		const splitMap = str.split((/\n| /g)).map((element, index) => {
-			// console.log("This is the match --------------------------------",element.match(URLreg))
 			if (element.match(URLreg)) {
 				return (<Link className='inline' key={index} href={`${element}`}> {element}</Link>)
 			} else {
@@ -103,6 +104,25 @@ const newNodeLinks = (str: string, regex: RegExp) => {
 		})
 		return splitMap
 	}
+
+	if (regex.toString() === /\!\[\[(.*?)\]\]/g.toString()) {
+	// console.log("This are the.......................... ... images path", fs.readdirSync('../images/Pasted image 20241106195251.png'))
+	
+	const splitMap = str.split((regex)).map((element, index) => {
+
+		if (index % 2 === 1) {
+			console.log("Element splitted: ", element) // Element splitted:  test
+			return (
+				<Image alt={`image ${index}`} width={50} height={50} className="inline" src='/images/Pasted image 20241106195251.png' rel="noopener noreferrer" key={index}/>
+			);
+		} else {
+			return <span className="inline" key={index}>{element}</span>;
+		}
+	})
+	return splitMap
+	
+	}
+	
 
 	// If it's internal link
 	if (regex.toString() === /\[\[(.*?)\]\]/g.toString()) {
@@ -122,6 +142,8 @@ const newNodeLinks = (str: string, regex: RegExp) => {
 		})
 		return splitMap
 	}
+
+
 }
 
 const whatRegex = (child: string) => {
@@ -145,62 +167,67 @@ const whatRegex = (child: string) => {
 }
 
 function transformLinks(tag: string) {
-	console.log("This are the.......................... ... images path", `${process.cwd()}/app/blog/posts/images`)
 	const Linking = ({ children }) => {
 		// if (typeof children === 'object' ) {
 		return TransformHTMLTag(children, tag)
 		// }
-
-
+		
 		// if (typeof children === 'string' && children.match(URLreg)) {
-		// 	console.log(children)
-		// 	return [
-		// 		React.createElement(
-		// 		`${tag}`,
-		// 		[],
-		// 		newNodeLinks(children, URLreg)
-		// 	)]
-		// }
-
-		// return React.createElement(
-		// 	`${tag}`,
-		// 	[
-		// 		React.createElement(`${tag}`)
-		// 	],
-		// 	whatRegex(children)
-		// )
-	}
-	return Linking
-}
-
-const TransformHTMLTag = (children: React.ReactNode | null, tag: string) => {
-	
-	console.log("This is the type of the children ", typeof children)
-	console.log("This is the children ", children)
-	
-	return Children.map(children, (item) => {
-		if (children=== null){
-			return
-		}
-		// if (typeof children === 'object' && children !== null) {
-		// 	return Object.fromEntries(
-		// 		Object.entries(children).map(([key, value]) => ({
-		// 			key,
-		// 			transformedValue: TransformHTMLTag(value, tag)
-		// 		}))
-		// 	);	
-		// }
-		if (typeof item === 'string' && item.match(/\[\[(.*?)\]\]/g)) {
-			return [
-				React.createElement(
-					`${tag}`,
-					[],
-					newNodeLinks(item, /\[\[(.*?)\]\]/g)
-				)
+			// 	console.log(children)
+			// 	return [
+				// 		React.createElement(
+					// 		`${tag}`,
+					// 		[],
+					// 		newNodeLinks(children, URLreg)
+					// 	)]
+					// }
+					
+					// return React.createElement(
+						// 	`${tag}`,
+						// 	[
+							// 		React.createElement(`${tag}`)
+							// 	],
+							// 	whatRegex(children)
+							// )
+						}
+						return Linking
+					}
+					
+					const TransformHTMLTag = (children: React.ReactNode | null, tag: string) => {
+						
+						return Children.map(children, (item) => {
+							if (children=== null){
+								return
+							}
+							// if (typeof children === 'object' && children !== null) {
+								// 	return Object.fromEntries(
+									// 		Object.entries(children).map(([key, value]) => ({
+										// 			key,
+										// 			transformedValue: TransformHTMLTag(value, tag)
+										// 		}))
+										// 	);	
+										// } 
+										if (typeof item === 'string' && item.match(/\!\[\[(.*?)\]\]/g)) {
+											
+											return [
+												React.createElement(
+													`${tag}`,
+													[],
+													newNodeLinks(item, /\!\[\[(.*?)\]\]/g)
+												)
+											];
+										}
+										if (typeof item === 'string' && item.match(/\[\[(.*?)\]\]/g)) {
+											return [
+												React.createElement(
+													`${tag}`,
+													[],
+													newNodeLinks(item, /\[\[(.*?)\]\]/g)
+												)
+												
 			];
 		}
 		if (typeof item === 'string' && item.match(URLreg)) {
-			console.log("-------------------------------------------- This is the string node: ", item)
 			return [
 				React.createElement(
 					`${tag}`,
@@ -232,7 +259,7 @@ let components = {
 	p: transformLinks("p"),
 	em: transformLinks("em"),
 	strong: transformLinks("strong"),
-	// span: transformLinks("span"),
+	span: transformLinks("span"),
 
 }
 
